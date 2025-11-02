@@ -1,6 +1,9 @@
 Supply Chain Demand Forecast (In-Progress)
+
 📦 Supply Chain Inventory Demand Forecast (MLOps Project)
+
 🎯 Project Status: Week 1 - Data Engineering Foundation COMPLETE
+
 This project demonstrates the ability to build a production-ready MLOps pipeline designed to forecast retail demand, minimizing inventory risks for a multi-location business.
 
 🛠️ Architecture & Technology Stack (The MLOps Standard)
@@ -13,14 +16,12 @@ Experiment Tracking	MLflow	Will be used in Week 2 to log, compare, and register 
 Model Serving	FastAPI + Docker	Will serve the final forecast predictions via a low-latency API.
 
 📈 Data Engineering Deliverable (Week 1)
+
+
 Goal: Create a singular, cleaned, and enriched feature table ready for direct model consumption.
 
-1. Data Source & Ingestion
-Source: Walmart Recruiting - Store Sales Forecasting (Kaggle Competition Data).
-
-Method: Raw data files (train.csv, features.csv, stores.csv) were merged via Pandas Left Join on the common keys (Store, Date, IsHoliday).
-
-Result: A master DataFrame containing 421,570 records was created.
+1. Data Source & Ingestion:
+The Walmart Store Sales Forecasting raw data (Kaggle) was merged using a Pandas Left Join on Store, Date, and IsHoliday to produce a master DataFrame of 421,570 records.
 
 2. Feature Engineering Highlights (DS Skill)
 All features have been calculated and saved to the processed layer:
